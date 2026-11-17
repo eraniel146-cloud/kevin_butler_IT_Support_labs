@@ -167,3 +167,29 @@ sfc /verifyonly
 - Technical documentation
 
 **Portfolio:** Hands-on Windows administration and IT support practice.
+## Lab 07 – Active Directory User and Group Management
+
+**Environment:** Ubuntu Server (Samba Active Directory) and Windows 11 Pro
+
+**Objective:** Practice domain user administration, security group membership, authentication, and least-privilege access.
+
+### Tasks Performed
+
+1. Listed Active Directory security groups using `samba-tool group list`.
+2. Identified the built-in Administrators group and reviewed its membership.
+3. Added `testuser` to the Domain Admins group.
+4. Verified membership using `samba-tool group listmembers`.
+5. Signed into Windows 11 using `BUTLERLAB\testuser`.
+6. Opened PowerShell as Administrator.
+7. Verified domain group membership using `whoami /groups`.
+8. Removed `testuser` from Domain Admins.
+9. Confirmed the account no longer had Domain Admins membership.
+
+### Results
+
+- Successfully authenticated using a domain account.
+- Verified elevated administrator privileges.
+- Practiced adding and removing privileged group membership.
+- Restored the account to standard domain-user privileges.
+
+**Skills Demonstrated:** Samba Active Directory, user administration, security groups, Windows domain authentication, PowerShell, privilege management, and least privilege.
