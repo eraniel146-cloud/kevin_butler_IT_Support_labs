@@ -1,0 +1,169 @@
+
+# Windows Administration Labs — Tasks 1–6
+
+## Lab Environment
+- Windows 11 Pro ARM virtual machine
+- UTM virtualization on macOS
+- Domain: butlerlab.local
+- Domain Controller: Ubuntu Server running Samba AD
+- Administrative account: BUTLERLAB\Administrator
+
+---
+
+## Lab 1 — Windows Event Viewer
+
+**Objective:** Review Windows security events.
+
+**Tools:** Event Viewer → Windows Logs → Security
+
+**Results:**
+- Event ID 4625: Failed logon attempt.
+- Account: admin
+- Failure reason: Unknown username or bad password.
+- Logon Type: 2 (Interactive).
+- Event ID 4624: Successful logon.
+- Account: admin
+- Logon Type: 11 (CachedInteractive).
+
+**Skills Demonstrated:** Security event analysis, logon auditing, and troubleshooting authentication failures.
+
+---
+
+## Lab 2 — Active Directory User Administration
+
+**Objective:** Manage domain user accounts using Samba AD tools.
+
+**Commands:**
+```bash
+sudo samba-tool user list
+sudo samba-tool user create testuser
+sudo samba-tool user disable testuser
+sudo samba-tool user show testuser
+sudo samba-tool user enable testuser
+```
+
+**Results:**
+- Listed existing domain users.
+- Created testuser.
+- Disabled testuser.
+- Verified userAccountControl value 514.
+- Re-enabled testuser.
+- Verified userAccountControl value 512.
+
+**Skills Demonstrated:** Domain account creation, account administration, and account status verification.
+
+---
+
+## Lab 3 — Windows Group Policy
+
+**Objective:** Configure local Windows security policies.
+
+**Tool:** Local Group Policy Editor (gpedit.msc)
+
+**Settings Configured:**
+- Minimum password length: 10 characters.
+- Password complexity: Enabled.
+- Maximum password age: 90 days.
+
+**Command:**
+```powershell
+gpupdate /force
+```
+
+**Results:**
+- User Policy update completed.
+- Computer Policy update encountered an error.
+- Local password policy settings were configured.
+
+**Note:** These were local Windows policies, not domain-wide Group Policy settings.
+
+**Skills Demonstrated:** Local security policy configuration and Group Policy troubleshooting.
+
+---
+
+## Lab 4 — Windows Defender Firewall
+
+**Objective:** Inspect Windows Firewall configuration.
+
+**Commands:**
+```powershell
+Get-NetFirewallProfile
+Get-NetFirewallProfile -Name Domain
+Get-NetFirewallRule -Enabled True | Measure-Object
+```
+
+**Results:**
+- Domain profile: Enabled.
+- Private profile: Enabled.
+- Public profile: Enabled.
+- 312 enabled firewall rules reported.
+
+**Skills Demonstrated:** Firewall profile inspection and firewall rule auditing.
+
+---
+
+## Lab 5 — PowerShell Troubleshooting
+
+**Objective:** Perform basic Windows network and system diagnostics.
+
+**Commands:**
+```powershell
+Test-NetConnection google.com -Port 443
+nslookup google.com
+systeminfo
+sfc /verifyonly
+```
+
+**Results:**
+- HTTPS connectivity test: Successful.
+- DNS resolution: Successful.
+- Operating system: Windows 11 Pro.
+- OS version: 10.0.
+- System File Checker: No integrity violations found.
+
+**Skills Demonstrated:** PowerShell diagnostics, DNS troubleshooting, network connectivity testing, and system integrity verification.
+
+---
+
+## Lab 6 — Windows Task Scheduler
+
+**Objective:** Create a scheduled Windows diagnostic task.
+
+**Task Name:** IT Lab Daily Check
+
+**Configuration:**
+- Trigger: Daily.
+- Schedule: 9:00 AM.
+- Action: Start a program.
+- Program: powershell.exe
+- Output: C:\LabCheck.txt
+
+**PowerShell Arguments:**
+```powershell
+-NoProfile -Command "Get-Date | Out-File C:\LabCheck.txt"
+```
+
+**Results:**
+- Created the scheduled task.
+- Configured the daily trigger.
+- Initiated a manual run.
+- Task remained in Running status and was manually ended.
+- Successful execution was not confirmed.
+
+**Skills Demonstrated:** Scheduled task creation, automation configuration, and task status monitoring.
+
+---
+
+## Overall Skills Practiced
+
+- Windows 11 administration
+- Active Directory user management
+- Security event auditing
+- Local Group Policy configuration
+- Windows Defender Firewall
+- PowerShell troubleshooting
+- DNS and network diagnostics
+- Task Scheduler and basic automation
+- Technical documentation
+
+**Portfolio:** Hands-on Windows administration and IT support practice.
