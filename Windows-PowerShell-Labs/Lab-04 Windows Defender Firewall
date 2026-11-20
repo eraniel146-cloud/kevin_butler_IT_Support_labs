@@ -1,0 +1,28 @@
+
+# Lab 04 — Windows Defender Firewall
+
+## Objective
+Inspect Windows Defender Firewall profiles and verify firewall status.
+
+## Environment
+- OS: Windows 11 Pro
+- Account: BUTLERLAB\Administrator
+- Tool: Windows Security
+
+## Procedure
+1. Opened Windows Security.
+2. Navigated to Firewall & network protection.
+3. Inspected Domain, Private, and Public network profiles.
+
+## Findings
+- Domain network firewall: On.
+- Private network firewall: On.
+- Public network firewall: On.
+
+## Skills Practiced
+- Windows firewall administration.
+- Network security inspection.
+- Firewall profile verification.
+
+## Result
+Verified that all three Windows Defender Firewall profiles were enabled.

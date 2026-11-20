@@ -1,0 +1,29 @@
+
+# Lab 06 — Windows Task Scheduler
+
+## Objective
+Inspect scheduled Windows maintenance tasks.
+
+## Environment
+- OS: Windows 11 Pro
+- Account: BUTLERLAB\Administrator
+- Tool: Task Scheduler (taskschd.msc)
+
+## Procedure
+1. Opened Task Scheduler.
+2. Navigated to Task Scheduler Library.
+3. Expanded Microsoft > Windows.
+4. Located the Windows Defender scheduled tasks.
+5. Identified the Periodic Maintenance task.
+
+## Findings
+- Located the Periodic Maintenance task.
+- Inspected scheduled task entries.
+
+## Skills Practiced
+- Windows Task Scheduler navigation.
+- Scheduled task identification.
+- Windows maintenance administration.
+
+## Result
+Successfully located and inspected a scheduled Windows maintenance task.

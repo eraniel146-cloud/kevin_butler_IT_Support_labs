@@ -1,0 +1,32 @@
+
+# Lab 02 — Active Directory Administration
+
+## Objective
+Verify domain user accounts, account status, and group membership.
+
+## Environment
+- Windows 11 Pro domain-joined workstation
+- Ubuntu Server Active Directory Domain Controller
+- Domain: butlerlab.local
+- Tools: samba-tool
+
+## Procedures
+1. Listed domain user accounts.
+2. Confirmed Administrator and labuser accounts existed.
+3. Inspected the labuser account.
+4. Verified the account was enabled.
+5. Checked membership in the Domain Users group.
+
+## Findings
+- Administrator account: Present.
+- labuser account: Present and enabled.
+- labuser membership: Domain Users.
+
+## Skills Practiced
+- Active Directory user administration.
+- Domain account verification.
+- Group membership management.
+- Samba AD command-line administration.
+
+## Result
+Successfully verified domain users, account status, and group membership.

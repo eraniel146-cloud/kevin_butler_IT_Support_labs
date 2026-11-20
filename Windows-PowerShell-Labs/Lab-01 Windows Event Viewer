@@ -1,0 +1,35 @@
+
+# Lab 01 — Windows Event Viewer
+
+## Objective
+Use Windows Event Viewer to investigate successful and failed login attempts.
+
+## Environment
+- OS: Windows 11 Pro
+- Account: BUTLERLAB\Administrator
+- Tool: Event Viewer
+
+## Procedure
+1. Opened Event Viewer.
+2. Navigated to Windows Logs > Security.
+3. Located failed logon events (Event ID 4625).
+4. Examined a successful logon event (Event ID 4624).
+
+## Findings
+- Event ID 4625: Failed logon attempt.
+- Account: admin.
+- Failure reason: Unknown username or bad password.
+- Logon Type: 2 (Interactive).
+
+- Event ID 4624: Successful logon.
+- Account: admin.
+- Logon Type: 11 (CachedInteractive).
+
+## Skills Practiced
+- Windows security event monitoring.
+- Investigating authentication failures.
+- Identifying logon types.
+- Reviewing Windows security logs.
+
+## Result
+Successfully identified and interpreted successful and failed Windows authentication events.

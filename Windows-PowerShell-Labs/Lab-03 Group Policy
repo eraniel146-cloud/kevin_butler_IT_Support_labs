@@ -1,0 +1,30 @@
+
+# Lab 03 — Group Policy Inspection
+
+## Objective
+Inspect Windows password policy settings using Local Group Policy Editor.
+
+## Environment
+- OS: Windows 11 Pro
+- Account: BUTLERLAB\Administrator
+- Tool: Local Group Policy Editor (gpedit.msc)
+
+## Procedure
+1. Opened Local Group Policy Editor.
+2. Navigated to Computer Configuration.
+3. Opened Windows Settings > Security Settings.
+4. Navigated to Account Policies > Password Policy.
+5. Inspected password security settings.
+
+## Findings
+- Minimum password length: 10 characters.
+- Password complexity: Enabled.
+- Maximum password age: 90 days.
+
+## Skills Practiced
+- Group Policy inspection.
+- Password policy configuration review.
+- Windows security administration.
+
+## Result
+Successfully inspected local Windows password policy settings.

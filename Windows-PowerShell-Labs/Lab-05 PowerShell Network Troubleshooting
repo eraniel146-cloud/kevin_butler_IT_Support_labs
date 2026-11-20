@@ -1,0 +1,30 @@
+
+# Lab 05 — PowerShell Network Troubleshooting
+
+## Objective
+Use PowerShell to inspect network configuration and test connectivity.
+
+## Environment
+- OS: Windows 11 Pro
+- Account: BUTLERLAB\Administrator
+- Tool: Windows PowerShell
+
+## Procedures
+1. Ran Get-NetIPConfiguration.
+2. Reviewed IPv4 address, default gateway, and DNS server.
+3. Ran Test-NetConnection google.com -Port 443.
+4. Verified successful TCP connectivity.
+
+## Findings
+- Network configuration displayed successfully.
+- Gateway and DNS information were present.
+- TCP port 443 connectivity: True.
+
+## Skills Practiced
+- PowerShell network diagnostics.
+- IP configuration inspection.
+- DNS and connectivity troubleshooting.
+- TCP port testing.
+
+## Result
+Successfully verified network configuration and HTTPS connectivity using PowerShell.
