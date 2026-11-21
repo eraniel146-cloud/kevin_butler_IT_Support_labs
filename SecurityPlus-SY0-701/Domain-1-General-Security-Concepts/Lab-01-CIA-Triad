@@ -1,0 +1,78 @@
+# Lab 01 – CIA Triad
+
+## Objective
+Understand and demonstrate the three fundamental principles of information security.
+
+## 1. Confidentiality
+Ensures information is accessible only to authorized individuals.
+
+Examples:
+- User authentication
+- File permissions
+- Encryption
+- Multi-factor authentication (MFA)
+
+## 2. Integrity
+Ensures information remains accurate and has not been improperly modified.
+
+Examples:
+- File hashes (SHA-256)
+- Digital signatures
+- Access controls
+- Audit logs
+
+## 3. Availability
+Ensures systems and information remain accessible when needed.
+
+Examples:
+- Backups
+- Redundant systems
+- Disaster recovery
+- Denial-of-service protection
+
+## Hands-on Exercise
+
+### Task 1 – Confidentiality
+Identify file permissions on a Linux system.
+
+Command:
+ls -l
+
+### Task 2 – Integrity
+Generate a SHA-256 hash.
+
+Command:
+sha256sum filename
+
+### Task 3 – Availability
+Check system uptime.
+
+Command:
+uptime
+
+## Security+ Exam Notes
+- Confidentiality = Prevent unauthorized disclosure.
+- Integrity = Prevent unauthorized modification.
+- Availability = Ensure reliable access.
+- CIA is a foundational Security+ concept.
+- A security control can support more than one CIA principle.
+
+## Results
+Results: Successfully completed all three exercises in Unbutu Server. 
+
+## Evidence – Command Results
+
+### Confidentiality
+Command: `ls -l`
+
+Result: Directory listing successful.
+
+### Integrity
+Command: `sha256sum security-test.txt`
+
+Result: SHA-256 hash generated successfully.
+
+### Availability
+Command: `uptime`
+
+Result: System uptime verified.
