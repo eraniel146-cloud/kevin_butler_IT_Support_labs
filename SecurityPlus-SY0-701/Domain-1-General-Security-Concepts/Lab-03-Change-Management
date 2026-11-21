@@ -1,0 +1,92 @@
+# Lab 03 – Change Management
+
+## Objective
+Understand how organizations control, approve, test, and document changes to IT systems.
+
+## 1. Change Request
+A formal request describing a proposed system change.
+
+Examples:
+- Installing security patches
+- Upgrading operating systems
+- Changing firewall rules
+- Modifying user permissions
+
+## 2. Approval Process
+Changes should be reviewed and authorized before implementation.
+
+Examples:
+- Manager approval
+- Change Advisory Board (CAB)
+- Security review
+- Risk assessment
+
+## 3. Risk Assessment
+Identify possible consequences before making changes.
+
+Consider:
+- Security vulnerabilities
+- System downtime
+- Data loss
+- Compatibility problems
+
+## 4. Testing
+Test changes before deploying them to production.
+
+Examples:
+- Test environment
+- Compatibility testing
+- Security testing
+- User acceptance testing
+
+## 5. Rollback Plan
+A documented procedure for reversing a change if something goes wrong.
+
+Examples:
+- Restore backups
+- Revert configuration
+- Reinstall previous software version
+
+## 6. Documentation
+Record:
+- What changed
+- Who approved it
+- When it occurred
+- Testing results
+- Problems encountered
+- Final outcome
+
+## Hands-on Exercise
+
+### Task 1 – Review Current System Information
+
+Command:
+hostnamectl
+
+### Task 2 – Review Recent System Changes
+
+Command:
+sudo journalctl --since "24 hours ago" -n 20
+
+### Task 3 – Identify Available Updates
+
+Command:
+apt list --upgradable
+
+## Security+ Exam Notes
+
+- Change management reduces operational and security risks.
+- CAB = Change Advisory Board.
+- A change request documents proposed modifications.
+- Testing helps prevent production failures.
+- Rollback plans provide a recovery option.
+- Unauthorized changes can introduce vulnerabilities.
+- Documentation provides accountability and audit evidence.
+
+## Results
+Results: Successfully completed all exercises.
+
+- Identified Ubuntu system hostname and architecture.
+- Reviewed recent system journal entries.
+- Checked available package upgrades.
+- No pending package upgrades were listed.
