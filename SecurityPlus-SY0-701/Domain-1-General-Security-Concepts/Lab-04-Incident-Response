@@ -1,0 +1,106 @@
+# Lab 04 – Incident Response
+
+## Objective
+Understand the incident response lifecycle and practice responding to a simulated security incident.
+
+## 1. Preparation
+Establish procedures, tools, backups, and incident response teams before an incident occurs.
+
+Examples:
+- Incident response policies
+- Security monitoring
+- Employee training
+- Backup procedures
+
+## 2. Detection and Analysis
+Identify suspicious activity and determine whether a security incident has occurred.
+
+Examples:
+- Failed login attempts
+- Malware alerts
+- Unusual network traffic
+- Unauthorized account access
+
+## 3. Containment
+Limit the spread and impact of an incident.
+
+Examples:
+- Isolate an infected computer
+- Disable a compromised account
+- Block malicious network traffic
+
+## 4. Eradication
+Remove the threat and its underlying cause.
+
+Examples:
+- Remove malware
+- Delete unauthorized accounts
+- Patch exploited vulnerabilities
+
+## 5. Recovery
+Restore affected systems to normal operation.
+
+Examples:
+- Restore clean backups
+- Rebuild compromised systems
+- Monitor systems after restoration
+
+## 6. Lessons Learned
+Document the incident and identify improvements.
+
+Examples:
+- Review incident timeline
+- Identify security weaknesses
+- Update response procedures
+- Improve employee training
+
+## Hands-on Exercise
+
+### Task 1 – Identify Failed Login Attempts
+
+Command:
+sudo journalctl -u ssh --since "24 hours ago"
+
+### Task 2 – Review Recent Security Events
+
+Command:
+sudo journalctl -p warning --since "24 hours ago" -n 20
+
+### Task 3 – Identify Running Services
+
+Command:
+systemctl --type=service --state=running
+
+## Simulated Incident
+
+Scenario:
+An administrator discovers repeated failed SSH login attempts.
+
+Response:
+1. Identify suspicious authentication activity.
+2. Determine whether access was successful.
+3. Contain the threat if necessary.
+4. Block unauthorized access.
+5. Review logs and monitor the system.
+6. Document findings and lessons learned.
+
+## Security+ Exam Notes
+
+- Preparation = Plan before an incident.
+- Detection = Identify suspicious activity.
+- Containment = Limit damage.
+- Eradication = Remove the threat.
+- Recovery = Restore normal operations.
+- Lessons learned = Improve future response.
+
+## Results
+
+Results: Successfully completed hands-on exercises.
+
+- Reviewed SSH authentication logs.
+- Examined system warning and error events.
+- Identified 19 running system services.
+- Correctly identified investigation as the first response to suspicious login activity.
+
+Simulated Incident:
+Selected Detection and Analysis as the appropriate initial response.
