@@ -1,0 +1,89 @@
+# Lab 02 – Security Controls
+
+## Objective
+Understand security control functions and categories for CompTIA Security+ SY0-701.
+
+## Part 1 – Control Functions
+
+### 1. Preventive
+Stops security incidents before they happen.
+
+Examples:
+- Firewalls
+- MFA
+- Security awareness training
+- Door locks
+
+### 2. Detective
+Identifies security incidents that have occurred or are occurring.
+
+Examples:
+- Intrusion Detection Systems (IDS)
+- Security logs
+- CCTV cameras
+- File integrity monitoring
+
+### 3. Corrective
+Restores systems or reduces damage after an incident.
+
+Examples:
+- Restoring backups
+- Malware removal
+- Patching compromised systems
+- Reimaging computers
+
+## Part 2 – Control Categories
+
+### Technical
+Implemented through technology.
+Examples: Firewalls, encryption, antivirus, access controls.
+
+### Managerial
+Policies, risk assessments, and security planning.
+Examples: Risk assessments, security policies, audits.
+
+### Operational
+Performed by people and processes.
+Examples: Security awareness training, incident response procedures.
+
+### Physical
+Protects facilities and equipment.
+Examples: Locks, fences, security guards, cameras.
+
+## Hands-on Exercise
+
+### Task 1 – Preventive Control
+Inspect Linux file permissions.
+
+Command:
+ls -l security-test.txt
+
+### Task 2 – Detective Control
+Review recent authentication activity.
+
+Command:
+sudo journalctl -u ssh --since "24 hours ago"
+
+### Task 3 – Corrective Control
+Update Linux package information.
+
+Command:
+sudo apt update
+
+## Security+ Exam Notes
+- Preventive = Stops incidents.
+- Detective = Identifies incidents.
+- Corrective = Restores or repairs.
+- Technical = Technology-based.
+- Managerial = Governance and oversight.
+- Operational = People and procedures.
+- Physical = Protects buildings and hardware.
+
+## Results
+
+Results: Successfully completed all exercises.
+- Inspected Linux file permissions.
+- Started SSH and reviewed service logs.
+- Updated package indexes and upgraded packages.
+- Resolved system clock synchronization using Chrony.
+- Verified apt update completed without errors.
