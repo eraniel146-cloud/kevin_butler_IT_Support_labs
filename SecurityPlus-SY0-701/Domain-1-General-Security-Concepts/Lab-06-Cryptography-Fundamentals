@@ -1,0 +1,82 @@
+# Security+ SY0-701 — Lab 06: Cryptography Fundamentals
+
+## Objective
+Understand encryption, hashing, digital signatures, certificates, and Public Key Infrastructure (PKI).
+
+## 1. Symmetric Encryption
+- Uses one shared key for encryption and decryption.
+- Fast and efficient for large amounts of data.
+- Example: AES.
+
+## 2. Asymmetric Encryption
+- Uses a public key and a private key.
+- Public keys can be shared; private keys must remain secret.
+- Example: RSA and ECC.
+
+## 3. Hashing
+- Converts data into a fixed-length digest.
+- Used to verify data integrity.
+- Hashing is not encryption and cannot normally be reversed.
+- Example: SHA-256.
+
+## 4. Salting
+- Adds random data to a password before hashing.
+- Helps defend against precomputed password attacks.
+
+## 5. Digital Signatures
+- Verify the sender's authenticity and message integrity.
+- Created using the sender's private key.
+- Verified using the sender's public key.
+
+## 6. Certificates and PKI
+- Digital certificates associate identities with public keys.
+- Certificate Authorities (CAs) issue and sign certificates.
+- PKI manages certificates, keys, and trust relationships.
+
+## 7. Data Encryption
+- At rest: Protects stored data.
+- In transit: Protects data moving across networks.
+
+## 8. Hands-On Exercise
+
+### Commands and Findings
+
+1. Created a test file and calculated its SHA-256 hash.
+2. Modified the file and calculated a second hash.
+3. Confirmed the hashes were different, demonstrating integrity verification.
+4. Checked OpenSSL version: 3.5.5.
+5. Generated 16 bytes of random data using OpenSSL.
+6. Encrypted the test file using AES-256-CBC with PBKDF2.
+7. Decrypted the encrypted file successfully.
+8. Verified the decrypted contents matched the modified original.
+
+### Security Concepts Demonstrated
+
+- Hashing verifies integrity.
+- AES-256 is symmetric encryption.
+- PBKDF2 derives an encryption key from a password.
+- The same secret is used for encryption and decryption.
+
+## 9. Results
+(To be completed afer the exercise.)
+
+## 10. Exam Practice
+
+
+1. Symmetric encryption — Correct.
+2. SHA-256 hashing — Correct.
+3. Asymmetric encryption — Reviewed.
+4. Password salting — Correct.
+5. Digital signatures — Correct.
+6. Certificate Authority — Correct.
+
+### Key Exam Takeaways
+
+- AES = Symmetric encryption.
+- RSA and ECC = Asymmetric encryption.
+- SHA-256 = Hashing and integrity.
+- Salt = Defends against precomputed hash attacks.
+- Digital signatures = Sender's private key to sign, public key to verify.
+- CA = Issues and digitally signs certificates.
+- TLS = Protects data in transit.
+- Encryption at rest = Protects stored data.o be completed after the exercise.)

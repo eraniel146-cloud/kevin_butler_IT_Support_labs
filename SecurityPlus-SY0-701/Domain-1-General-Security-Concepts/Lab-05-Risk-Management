@@ -1,0 +1,76 @@
+# Security+ SY0-701 — Lab 05: Risk Management
+
+## Objective
+Identify security risks, assess their potential impact, and select appropriate risk treatment methods.
+
+## 1. Key Concepts
+
+- **Threat:** Something capable of causing harm.
+- **Vulnerability:** A weakness that can be exploited.
+- **Risk:** The likelihood and potential impact of a threat exploiting a vulnerability.
+- **Risk assessment:** Evaluating the likelihood and impact of a risk.
+
+## 2. Four Risk Treatment Methods
+
+1. **Mitigation:** Reduce the likelihood or impact of a risk.
+2. **Acceptance:** Acknowledge and accept the risk.
+3. **Transference:** Shift financial responsibility to another party, such as through insurance.
+4. **Avoidance:** Eliminate the activity creating the risk.
+
+## 3. Additional Terms
+
+- **Inherent risk:** Risk before security controls are applied.
+- **Residual risk:** Risk remaining after controls are applied.
+- **Risk appetite:** The amount of risk an organization is willing to accept.
+- **Risk tolerance:** The acceptable variation around a risk target.
+
+## 4. Hands-On Exercise
+
+### Findings
+
+1. Network ports: Listening ports identified using `ss -tulnp`.
+2. Running services: 20 services identified.
+3. Software updates: No upgradeable packages listed.
+4. User accounts: One regular user identified (kevin, UID 1000).
+
+### Risk Assessment
+
+- Listening ports: Potential exposure if unnecessary services are accessible.
+- Running services: Unnecessary services could increase the attack surface.
+- Software updates: No pending upgrades identified during inspection.
+- User accounts: Accounts should be reviewed regularly for unauthorized access.
+
+### Risk Treatment
+
+- Mitigation: Disable unnecessary services and apply security controls.
+- Acceptance: Accept a documented low-level risk.
+- Transference: Transfer financial risk through insurance or contracts.
+- Avoidance: Eliminate the activity that creates the risk.
+
+## 6. Exam Practice
+### Question 1
+
+A company identifies an unpatched server vulnerability. The security team installs a patch to eliminate the vulnerability.
+
+Which risk treatment method is being used?
+
+A. Acceptance
+B. Avoidance
+C. Mitigation
+D. Transference
+
+### Results
+
+1. Risk mitigation — Correct after review.
+2. Risk transference — Correct.
+3. Risk acceptance — Correct after review.
+4. Risk avoidance — Correct.
+5. Residual risk — Correct.
+
+### Key Exam Takeaways
+
+- Patching = Mitigation.
+- Cybersecurity insurance = Transference.
+- Knowingly accepting risk = Acceptance.
+- Discontinuing a risky activity = Avoidance.
+- Remaining risk after controls = Residual risk.
