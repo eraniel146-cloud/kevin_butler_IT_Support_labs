@@ -1,0 +1,90 @@
+# Security+ SY0-701 — Lab 07: PKI and Digital Certificates
+
+## Objective
+Understand how Public Key Infrastructure establishes trust and manages digital certificates.
+
+## 1. Public Key Infrastructure (PKI)
+PKI is a framework for managing digital certificates and public/private keys.
+
+## 2. Certificate Authority (CA)
+A trusted organization that issues and digitally signs certificates.
+
+## 3. Registration Authority (RA)
+Verifies the identity of an entity requesting a certificate.
+
+## 4. Certificate Revocation
+- CRL: Certificate Revocation List.
+- OCSP: Online Certificate Status Protocol.
+- Both help determine whether a certificate has been revoked.
+
+## 5. Certificate Chain of Trust
+- Root CA: Top-level trusted authority.
+- Intermediate CA: Issues certificates under the root.
+- End-entity certificate: Issued to a server, user, or device.
+
+## 6. Certificate Types
+- Self-signed: Signed by its own private key; not independently trusted by default.
+- CA-issued: Signed by a trusted Certificate Authority.
+- Wildcard: Covers multiple subdomains.
+- SAN: Supports multiple DNS names or identities.
+
+## 7. Key Management
+- Private keys must remain protected.
+- Public keys can be distributed.
+- Certificates bind identities to public keys.
+- Expired certificates must be renewed.
+
+## 8. Hands-On Exercise
+### Commands and Findings
+
+1. Generated an RSA 2048-bit private key.
+2. Created a self-signed X.509 certificate.
+3. Restricted access to the private key.
+4. Inspected the certificate issuer and subject.
+5. Confirmed the certificate validity period was 365 days.
+6. Extracted the certificate's public key.
+7. Verified the private key was valid.
+8. Generated a SHA-256 certificate fingerprint.
+9. Verified the self-signed certificate successfully.
+
+### Security Concepts Demonstrated
+
+- PKI establishes trust through digital certificates.
+- A self-signed certificate identifies itself as its own issuer.
+- Private keys must be protected.
+- Public keys can be distributed.
+- Certificate expiration limits the validity period.
+- SHA-256 fingerprints help identify certificates.
+
+## 9. Results
+(To be completed after the exercise.)
+
+## 10. Exam Practice
+### Question 1
+
+Which organization issues and digitally signs certificates to establish trust?
+
+A. Registration Authority (RA)
+B. Certificate Authority (CA)
+C. Network Administrator
+D. Domain Controller
+
+### Results
+
+1. Certificate Authority — Correct.
+2. OCSP — Reviewed.
+3. Root CA — Correct.
+4. Wildcard certificate — Correct after hint.
+5. Subject Alternative Name — Correct.
+6. Private key protection — Correct.
+
+### Key Exam Takeaways
+
+- CA = Issues and signs certificates.
+- RA = Verifies certificate applicants.
+- OCSP = Checks certificate revocation status online.
+- CRL = List of revoked certificates.
+- Root CA = Trust anchor.
+- Wildcard = Covers multiple subdomains.
+- SAN = Lists additional identities covered.
+- Private keys = Must remain protected.
